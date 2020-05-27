@@ -47,7 +47,7 @@ module GoogleMapsService::Apis
       params[:region] = region if region
       params[:language] = language if language
 
-      return get('/maps/api/geocode/json', params)[:results]
+      return get('/maps/api/geocode/json', params)
     end
 
     # Reverse geocoding is the process of converting geographic coordinates into a
